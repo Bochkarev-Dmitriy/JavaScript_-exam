@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/dark.css" id="theme">
+    <link rel="icon" type="image/x-icon" href="images/calculator.ico">
+</head>
+<body>
+
+<form action="">
+    <div class="wrapper" id="form">
+        
+        <div class="box1">
+            <input type="text" name="screen" value="0" maxlength="25" class="display" disabled>
+        </div>
+        <div>
+            <input type="button" value="ln" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { ln(this.form) }">
+        </div>
+        <div>
+            <input TYPE="button" value="7" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '7')">
+        </div>
+        <div>
+            <input type="button" value="8" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '8')"> 
+        </div>
+        <div>
+            <input type="button" value="9" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '9')">
+        </div>
+        <div>
+            <input type="button" value="/" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, '/')">
+        </div>
+        <div>
+            <input type="button" value="sq" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { sq(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="4" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '4')">
+        </div>
+        <div>
+            <input type="button" value="5" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '5')">
+        </div>
+        <div>
+            <input type="button" value="6" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '6')">
+        </div>
+        <div>
+            <input type="button" value="*" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, '*')">
+        </div>
+        <div>
+            <input type="button" value="acos" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { acos(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="1" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '1')">
+        </div>
+        <div>
+            <input type="button" value="2" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '2')">
+        </div>
+        <div>
+            <input type="button" value="3" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '3')">
+        </div>
+        <div>
+            <input type="button" value="-" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, '-')">
+        </div>
+        <div>
+            <input type="button" value="asin" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { asin(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="0" class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '0')">
+        </div>
+        <div>
+            <input type="button" value="." class="button_regular main_color button_radius" onclick="symbolAdd(this.form.screen, '.')">
+        </div>
+        <div>
+            <input type="button" value="+/-" class="button_regular signs_color button_radius" onclick="changeTheSign(this.form.screen)">
+        </div>
+        <div>
+            <input type="button" value="+" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, '+')">
+        </div>
+        <div>
+            <input type="button" value="sin" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { sin(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="cos" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { cos(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="tan" class="button_regular signs_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { tan(this.form) }">
+        </div>
+        <div>
+            <input type="button" value="(" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, '(')">
+        </div>
+        <div>
+            <input type="button" value=")" class="button_regular signs_color button_radius" onclick="symbolAdd(this.form.screen, ')')">
+        </div>
+        <div>
+            <input type="button" value="clear" class="button_regular warning_color button_radius" onclick="this.form.screen.value = 0 ">
+        </div>
+        <div class="box2">
+            <input type="button" value="=" name="enter" class="button_big resolving_color button_radius" onclick="if (ControlNumber(this.form.screen.value)) { calculate(this.form) }">
+
+        </div>
+        <div>
+            <input type="button" value="backspace" class="button_regular warning_color button_radius" onclick="symbolDelete(this.form.screen)">
+        </div>
+    
+    </div>
+</form>
+<div class="footer">
+    <p class="footer-text-left">
+        <a href="../../index.html" class="menu">
+            home
+        </a>
+        <a href="../../page_projects/index.html" class="menu">
+            more
+        </a>
+        <a class="menu theme-button" onclick="changeTheme()">
+            <img src="images/SunIcon.svg" alt="Theme Icon" id="theme-icon" class="icon-style">
+        </a>
+        <div class="footer-content-right">
+            <a href="https://github.com/">
+                <img src="images/github-white.png" class="icon-style" alt="Github icon" id="iconGithub">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/twitter-white.png" class="icon-style" alt="Twitter icon" id="iconTwitter">
+            </a>
+            <a href="https://mail.ru/">
+                <img src="images/email-white.png" class="icon-style" alt="Emailicon" id="iconEmail">
+            </a>
+        </div>
+        <h1 id="heading">
+            Calculator
+        </h1>
+    </p>
+</div>
+<script src="skript.js">
+</script>
+</body>
+</html>

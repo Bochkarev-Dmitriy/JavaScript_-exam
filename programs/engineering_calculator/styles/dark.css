@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Digital dream Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://assets.codepen.io/4439736/digital-dream.regular.woff") format("woff");
+}
+
+*{
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-auto-rows: 50px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	width: 790px;
+	height: 480px;
+	padding: 20px 20px;
+	background-color: black;
+	box-shadow: 0 0 20px 8px;
+	margin:20px auto;	/*выравниваю калькулятор по центру */
+	border: 5px solid #5f626e;
+    border-bottom-left-radius: 2.5rem;
+	border-radius: 2.5rem;
+	grid-template-rows: 120px 50px 50px 50px 50px 50px 50px;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.box1:after {
+    content: linear-gradient(105deg, rgba(224, 224, 224, 0.3) 31%, transparent 33%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	pointer-events: none;  
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.display {
+	font-size: 42px;
+	font-family: sans-serif;
+	color: black;
+	width: 752px;
+	height: 44px;
+	background-color: rgb(72,161,190);
+	font-family: "Digital dream Regular";
+	border: 15px solid #494D56;
+	border-radius: 10px;
+	position: relative;
+}
+
+.button_radius {
+	border-radius: 8px;
+}
+
+.button_regular {
+	width: 150px;
+	height: 50px;
+	font-size: 22px;
+	font-family: sans-serif;
+}
+
+.button_big {
+	width: 470px;
+	height: 50px;
+	font-size: 22px;
+	font-family: sans-serif;	
+}
+
+.signs_color {
+	background-color: rgb(75, 72, 72);
+	cursor: pointer;
+}
+
+.signs_color:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.main_color {
+	cursor: pointer;
+	background-color: rgb(41, 40, 40);
+}
+
+.main_color:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.warning_color{
+	background-color: rgba(224, 83, 22, 0.445);
+	cursor: pointer;
+}
+
+.warning_color:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.resolving_color{
+	background-color: rgba(119, 217, 112, 0.507);
+	cursor: pointer;
+}
+
+.resolving_color:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/* Footer */
+.footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	left:0;
+	width:100%;
+	height: 90px;
+	background-color: rgb(41, 40, 40);
+}
+
+.footer-text-left {
+	font-size:25px;
+	padding-left:40px;
+	float:left;
+	word-spacing:20px;
+}
+
+a.menu:hover {
+	margin-bottom: 1px;
+}
+
+.footer-content-right {
+	padding-right:40px;
+	margin-top:20px;
+	float:right;
+}
+
+.icon-style {
+	height:40px;
+	width: 40px;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+.icon-style:hover {
+	margin-bottom: 1px;
+}
+
+.theme-button {
+    all: unset;
+    cursor: pointer;
+  }
+
+h1 {
+	text-align: center;
+}

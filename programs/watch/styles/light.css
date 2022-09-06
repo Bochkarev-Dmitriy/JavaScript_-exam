@@ -1,0 +1,248 @@
+body {
+    background-image: url(../images/shelf.jpg);
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    background-image: url(../images/clock.png);
+    width: 773px;
+    height: 439px;
+    margin:10px auto;
+    position: relative;
+}
+
+.day {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 20.9%;
+    margin-left: 12.8%;
+    grid-area: day;
+    font-size: 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto-fit);
+    grid-template-areas: "one two three" "one two three";
+}
+
+.date {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 20.7%;
+    margin-left: 39.5%;
+    grid-area: num;
+    font-size: 5.8rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto-fit);
+    grid-template-areas: "one two" "one two";
+}
+
+.clock {
+    width: 211px;
+    height: 211px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 14.8%;
+    margin-left: 62%;
+}
+
+.general_design {
+    box-shadow: inset 0 0 12px;
+    border: 2px solid rgb(31, 30, 30);
+    background-color: rgb(233, 212, 212);
+    color: rgb(31, 30, 30);
+}
+
+.date_border {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.date-01 {
+    grid-area: one;
+    height: 140px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-02 {
+    grid-area: two;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-03 {
+    grid-area: one;
+}
+
+.date-04 {
+    grid-area: two;
+}
+
+.day_border {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.day-01 {
+    grid-area: one;
+    height: 140px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-02 {
+    grid-area: two;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-03 {
+    grid-area: three;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-04 {
+    grid-area: one;
+}
+
+.day-05 {
+    grid-area: two;
+}
+
+.day-06 {
+    grid-area: three;
+}
+
+.clock_hours, .clock_minutes, .clock_seconds {
+    position: absolute;
+    top: 50%;
+    box-shadow: 2px 0px 5px 0px black;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+
+.clock_hours {
+    height: 5px;
+    width: 40%;
+    left: 10%;
+    border-radius: 2.5rem;
+    background-color: rgb(31, 30, 30);
+}
+
+.clock_minutes {
+    height: 5px;
+    width: 45%;
+    left: 5%;
+    border-radius: 2.5rem;
+    background-color: rgb(31, 30, 30);
+}
+
+.clock_seconds {
+    height: 3px;
+    width: 45%;
+    left: 5%;
+    border-radius: 2.5rem;
+    background-color: rgb(231, 5, 5);
+}
+
+.dial_twelve {
+    top: 3px;
+    left: 100px;
+    position: absolute;
+}
+    
+.dial_three {
+    top: 100px;
+    left: 195px;
+    position: absolute;
+}
+    
+.dial_six {
+    top: 191px;
+    left: 100px;
+    position: absolute;
+}
+    
+.dial_nine {
+    top: 100px;
+    left: 5px;
+    position: absolute;
+}
+
+
+
+/* Footer */
+.footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height: 90px;
+	background-image: url(../images/klen_kanadskiy.jpg);
+}
+
+.footer-text-left {
+	font-size:25px;
+	padding-left:40px;
+	float:left;
+	word-spacing:20px;
+}
+
+a {
+	color: black;
+}
+
+a.menu:hover {
+	margin-bottom: 1px;
+}
+
+.footer-content-right {
+	padding-right:40px;
+	margin-top:20px;
+	float:right;
+}
+
+.icon-style {
+	height:40px;
+	width: 40px;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+.icon-style:hover {
+	margin-bottom: 1px;
+}
+
+.theme-button {
+    all: unset;
+    cursor: pointer;
+  }
+
+h1 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
